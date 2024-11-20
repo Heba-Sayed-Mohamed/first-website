@@ -13,58 +13,69 @@
 </head>
 
 <body>
-    <div class="container flex">
-        <div class="content flex">
-            <div class="row">
-                <div class="col-md-6 text-center alert side-image">
-                    <style>
-                        .side-image{
-                            background-image: url('img/login.jpg');
- 
-                        }
-                    </style>
-                    
-                    <h1>Welcome to Our Candle Making World!</h1>
-                    <p> Let's light up your world, one candle at a time!
-
-                    </p>
+    <!----------------------- Main Container -------------------------->
+    <div class="container d-flex justify-content-center align-items-center min-vh-100 m-3">
+        <!----------------------- Login Container -------------------------->
+        <div class="row rounded-5 p-3 bg-white shadow box-area">
+            <!--------------------------- Left Box ----------------------------->
+            <div class="col-md-6 rounded-4 d-flex justify-content-center align-items-center flex-column  left-box"
+                style="background: #CA7373; ">
+                <div class="featured-image mb-3">
+                    <img src="img/candlle log.png" class="img-fluid" style="width: 400px;">
+                    <h1 class="text-danger-emphasis text-wrap text-center">Welcome to Our Candle Making World!</h1>
+                    <p class="text-white text-wrap text-center" style="font-weight: 600;">Let's light up your world, one candle at a time!</p>
                 </div>
-                <div class=" col-md-6  alert  login-form">
-
-                    <form action="file:///C:/Users/Fix-Dell/Downloads/website/home.html">
-                        <h3 class=" text-center">Sign In </h3>
-                        <div class="name">
-                        <input type="text" id="fname" placeholder="  Enter First Name" class=" mb-3 p-4 m-1">
-                       
-                        <input type="text" id="lname" placeholder="  Enter Last Name"class=" mb-3 p-4 m-1">
+            </div>
+            <!-------------------- ------ Right Box ---------------------------->
+            <div class="col-md-6 right-box">
+                <div class="row align-items-center">
+                    <div class="header-text mb-3">
+                        <h2>Hello,Again</h2>
+                        <p>We are happy to have you back.</p>
+                    </div>
+                    <form action="file:///C:/Users/Fix-Dell/Downloads/first%20website/home.html">
+                        <div class="input-group mb-2">
+                            <input type="text " class="form-control form-control-lg bg-light fs-6 " placeholder="  Enter First Name">
+                        </div>
+                        <div class="input-group mb-2">
+                            <input type="text " class="form-control form-control-lg bg-light fs-6 " placeholder="  Enter Last Name">
+                        </div>
+                        <div class="input-group mb-2">
+                            <input type="email" class="form-control form-control-lg bg-light fs-6 " placeholder="  Enter Email"required>
+                        </div>
+                        <div class="input-group mb-2">
+                            <input type="password" class="form-control form-control-lg bg-light fs-6 " placeholder="  Enter Password">
+                        </div>
+                        <div class="input-group mb-2">
+                            <input type="password" class="form-control form-control-lg bg-light fs-6 " placeholder="  Enter Confirm_Password">
                         </div>
                         
-                        <input type="email" id="email" placeholder="  Enter Email" name="email"class=" mb-3 p-3" required>
-                        
-                        <input type="password" id="pas" placeholder="  Enter Password" name="password"class=" mb-3 p-3">
-                       
-                        <input type="password" id="confirm_password" placeholder="  Enter Confirm_Password"
-                            name="confirm_password"class=" mb-3 p-3">
-
-                           
-                        <input type="file" id="file" class="btn btn-light w-100 ">
+                        <!-- <input type="file" id="file" class="btn btn-light w-100 "> -->
                         <label for="gender" class=" mb-3 p-1" >  Gender : <input type="radio"> Male <input type="radio"> Female</label>
                         <div class="remember mb-3 p-3">
                         <label><input type="checkbox"> Remember Me</label>
                         </div>
-                      
-                        <button class="btn btn-success w-100">Submit</button>
-                        
-                        
 
+                        <div class="input-group mb-3">
+                            <button class="btn btn-lg  btn-outline-danger w-100 fs-6">Login</button>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <button class="btn btn-lg  btn-outline-secondary w-100 fs-6"><i
+                                    class="fa-brands fa-google"></i>Sign in with google</button>
+                        </div>
+                        <div class="row">
+                            <small>Don't have account? <a href="#">Sign Up</a></small>
+                        </div>
                     </form>
                 </div>
+
             </div>
 
         </div>
 
     </div>
-
+    
 </body>
 
 </html>
